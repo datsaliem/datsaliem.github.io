@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dắt Sa Liêm | Digital Marketing Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-center mb-2 text-gray-800;
+        }
+        .section-subtitle {
+            @apply text-center text-gray-500 mb-12;
+        }
+        .skill-badge {
+            @apply inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 mb-2 px-3 py-1 rounded-full;
+        }
+        .case-study-card {
+            @apply bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- === HEADER === -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">DẮT SA LIÊM</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-blue-600">Giới thiệu</a>
+                <a href="#case-studies" class="hover:text-blue-600">Case Studies</a>
+                <a href="#experience" class="hover:text-blue-600">Kinh nghiệm</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Liên hệ</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-6 pt-2 pb-4">
+            <a href="#about" class="block py-2 text-gray-800 hover:text-blue-600">Giới thiệu</a>
+            <a href="#case-studies" class="block py-2 text-gray-800 hover:text-blue-600">Case Studies</a>
+            <a href="#experience" class="block py-2 text-gray-800 hover:text-blue-600">Kinh nghiệm</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Liên hệ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- === HERO SECTION === -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <img src="https://i.ibb.co/L5T1bmy/datsaliem.jpg" alt="Dắt Sa Liêm" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Chào bạn, tôi là Dắt Sa Liêm</h1>
+                <p class="text-xl text-gray-600 mt-4 max-w-3xl mx-auto">Một Digital Marketing Specialist với đam mê tăng trưởng traffic và tối ưu hiệu quả kinh doanh bằng dữ liệu.</p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="mailto:Liemsa110@gmail.com" class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors">Liên hệ với tôi</a>
+                     <!-- THAY THẾ LINK CV CỦA BẠN VÀO ĐÂY -->
+                    <a href="#" class="bg-gray-200 text-gray-800 px-8 py-3 rounded-md font-semibold text-lg hover:bg-gray-300 transition-colors">Xem CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- === ABOUT / SKILLS SECTION === -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Giới thiệu & Năng lực chuyên môn</h2>
+                <p class="section-subtitle">Kỹ năng và kinh nghiệm thực tiễn giúp tôi tạo ra giá trị.</p>
+                <div class="grid md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-2 text-center">
+                       <img src="https://i.ibb.co/L5T1bmy/datsaliem.jpg" alt="Dắt Sa Liêm" class="w-full max-w-xs mx-auto rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Về tôi</h3>
+                        <p class="mb-6">Với nền tảng từ FPT Polytechnic và kinh nghiệm thực chiến tại OneAds, tôi vận dụng kỹ năng SEO toàn diện và quản lý quảng cáo để giúp doanh nghiệp tăng trưởng bền vững. Tôi có kinh nghiệm xây dựng quy trình, làm việc với dữ liệu và luôn có trách nhiệm cao trong công việc.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Kỹ năng cốt lõi</h3>
+                        <div>
+                            <span class="skill-badge">SEO Toàn Diện</span>
+                            <span class="skill-badge">Google Ads</span>
+                            <span class="skill-badge">Content Strategy</span>
+                            <span class="skill-badge">Technical SEO</span>
+                            <span class="skill-badge">On-Page & Off-Page</span>
+                            <span class="skill-badge">Data Analysis</span>
+                            <span class="skill-badge">Google Analytics (GA4)</span>
+                            <span class="skill-badge">Google Data Studio</span>
+                            <span class="skill-badge">Lark Suite</span>
+                            <span class="skill-badge">Make.com Automation</span>
+                            <span class="skill-badge">Wordpress & Haravan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === CASE STUDIES SECTION === -->
+        <section id="case-studies" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Dự án & Thành tựu nổi bật</h2>
+                <p class="section-subtitle">Nơi kết quả được chứng minh bằng những con số cụ thể.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- CASE STUDY 1 -->
+                    <div class="case-study-card">
+                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=E-commerce" alt="Dự án TMĐT">
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500 font-medium">Google Ads & CRO</span>
+                            <h3 class="text-xl font-bold text-gray-800 my-2">Tối ưu quảng cáo TMĐT, đạt ROAS 6.59</h3>
+                            <p class="mb-4">Quản lý ngân sách ~400 triệu/tháng, A/B testing và tối ưu trang đích để vượt trội các chỉ số hiệu suất quan trọng.</p>
+                            <div class="space-y-2">
+                                <p class="font-semibold text-green-600">✓ ROAS: 6.59</p>
+                                <p class="font-semibold text-green-600">✓ CTR: 17.76%</p>
+                                <p class="font-semibold text-green-600">✓ Giảm 75% chi phí/tin nhắn (FB Ads)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CASE STUDY 2 -->
+                    <div class="case-study-card">
+                        <img src="https://placehold.co/600x400/10B981/FFFFFF?text=SEO+Growth" alt="Dự án SEO">
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500 font-medium">SEO & Content Strategy</span>
+                            <h3 class="text-xl font-bold text-gray-800 my-2">Tăng trưởng traffic website OneAds & Khách hàng</h3>
+                            <p class="mb-4">Xây dựng quy trình, quản lý và triển khai chiến lược SEO bài bản, giúp 95% dự án đạt và vượt KPI cam kết.</p>
+                             <div class="space-y-2">
+                                <p class="font-semibold text-green-600">✓ 17.400 clicks/tháng (Website OneAds)</p>
+                                <p class="font-semibold text-green-600">✓ 840.000 lượt hiển thị/tháng</p>
+                                <p class="font-semibold text-green-600">✓ 95% trong 11 dự án đạt & vượt KPI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CASE STUDY 3 -->
+                    <div class="case-study-card">
+                        <img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Project" alt="Dự án tại trường">
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500 font-medium">SEO & Marketing tổng thể</span>
+                            <h3 class="text-xl font-bold text-gray-800 my-2">Đưa từ khóa "Tranh Năng Lượng" lên Top 1 Google</h3>
+                            <p class="mb-4">Dự án tại trường FPT Polytechnic. Áp dụng kiến thức SEO và marketing để đạt được vị trí số 1 cho từ khóa chính của dự án.</p>
+                             <div class="space-y-2">
+                                <p class="font-semibold text-green-600">✓ Top 1 Google cho từ khóa chính</p>
+                                <p class="font-semibold text-green-600">✓ Xây dựng kế hoạch marketing hoàn chỉnh</p>
+                                <p class="font-semibold text-green-600">✓ Đạt 30.2k lượt xem trên TikTok</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <!-- === EXPERIENCE SECTION === -->
+        <section id="experience" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Kinh nghiệm làm việc</h2>
+                <p class="section-subtitle">Hành trình phát triển kỹ năng và tạo ra giá trị.</p>
+                <div class="border-l-2 border-blue-500 ml-6 pl-8 md:pl-12 relative">
+                    <!-- Experience 1 -->
+                    <div class="mb-12 relative">
+                        <div class="absolute -left-[45px] md:-left-[58px] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-gray-500">06/2025 - Hiện tại</p>
+                        <h3 class="text-xl font-bold text-gray-800">Chuyên viên Digital</h3>
+                        <p class="font-semibold text-gray-600">OneAds Digital</p>
+                        <p class="mt-2">Quản lý và tối ưu toàn diện các chiến dịch Google Ads, đặc biệt trong mảng TMĐT. Xây dựng dashboard báo cáo, phối hợp với team SEO & Creative để tối ưu chuyển đổi.</p>
+                    </div>
+                    <!-- Experience 2 -->
+                     <div class="mb-12 relative">
+                        <div class="absolute -left-[45px] md:-left-[58px] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-gray-500">08/2024 - 05/2025</p>
+                        <h3 class="text-xl font-bold text-gray-800">Quản lý dự án SEO</h3>
+                        <p class="font-semibold text-gray-600">OneAds Digital</p>
+                        <p class="mt-2">Xây dựng quy trình SEO, quản lý và kiểm soát chất lượng nội dung, lập kế hoạch, báo cáo hiệu suất với khách hàng và tự động hóa các tác vụ social.</p>
+                    </div>
+                    <!-- Experience 3 -->
+                     <div class="relative">
+                        <div class="absolute -left-[45px] md:-left-[58px] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
+                        <p class="text-sm text-gray-500">02/2024 - 08/2024</p>
+                        <h3 class="text-xl font-bold text-gray-800">Thực tập sinh SEO</h3>
+                        <p class="font-semibold text-gray-600">OneAds Digital</p>
+                        <p class="mt-2">Nghiên cứu từ khóa, tối ưu on-page, kiểm tra lỗi kỹ thuật, triển khai hệ thống social entity. Hoàn thành xuất sắc và nhận giải "Intern Xuất Sắc".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === CONTACT SECTION === -->
+        <section id="contact" class="py-20 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold">Bạn có một dự án thú vị?</h2>
+                <p class="text-xl mt-4 max-w-2xl mx-auto">Tôi luôn sẵn sàng lắng nghe và thảo luận về cách chúng ta có thể cùng nhau phát triển. Hãy kết nối với tôi!</p>
+                <a href="mailto:Liemsa110@gmail.com" class="mt-8 inline-block bg-white text-blue-600 px-10 py-4 rounded-md font-bold text-lg hover:bg-gray-100 transition-colors">Gửi Email</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                 <!-- THAY THẾ LINK LINKEDIN CỦA BẠN VÀO ĐÂY -->
+                <a href="https://www.linkedin.com/in/saliem" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+                 <!-- THAY THẾ LINK FACEBOOK (NẾU MUỐN) VÀO ĐÂY -->
+                <a href="#" class="hover:text-blue-400">Facebook</a>
+            </div>
+            <p>&copy; 2025 Dắt Sa Liêm. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
