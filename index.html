@@ -1,208 +1,55 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Dắt Sa Liêm | Digital Marketing Specialist</title>
-
-  <!-- Dependencies -->
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- SwiperJS CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
-  </style>
+  <meta name="description" content="Portfolio cá nhân Dắt Sa Liêm - Chuyên viên Digital Marketing với nền tảng SEO, Google Ads, kinh nghiệm thực chiến tại OneAds.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Thêm favicon/icon nếu có -->
 </head>
-<body class="bg-white text-gray-700">
-  <!-- === HEADER (Navigation) === -->
-  <!-- Keep original links and structure -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold text-gray-800">DẮT SA LIÊM</a>
-      <div class="hidden md:flex space-x-6 items-center">
-        <a href="#about" class="hover:text-blue-600">Giới thiệu</a>
-        <a href="#experience" class="hover:text-blue-600">Kinh nghiệm</a>
-        <a href="#projects" class="hover:text-blue-600">Dự án</a>
-        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Liên hệ</a>
-      </div>
-      <div class="md:hidden">
-        <button id="menu-btn" class="text-gray-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
-      </div>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Trang chủ</a></li>
+        <li><a href="/about/about.html">Về tôi</a></li>
+        <li><a href="/skills/skills.html">Kỹ năng</a></li>
+        <li><a href="/projects/projects.html">Dự án</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/contact/contact.html">Liên hệ</a></li>
+      </ul>
     </nav>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white px-6 pt-2 pb-4">
-      <a href="#about" class="block py-2 text-gray-800 hover:text-blue-600">Giới thiệu</a>
-      <a href="#experience" class="block py-2 text-gray-800 hover:text-blue-600">Kinh nghiệm</a>
-      <a href="#projects" class="block py-2 text-gray-800 hover:text-blue-600">Dự án</a>
-      <a href="#contact" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Liên hệ</a>
-    </div>
   </header>
-
   <main>
-    <!-- === HERO SECTION === -->
-    <!-- Original hero content preserved -->
-    <section id="hero" class="py-20 bg-white">
-      <div class="container mx-auto px-6 text-center">
-        <img alt="Dắt Sa Liêm" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg" />
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Chào bạn, tôi là Dắt Sa Liêm</h1>
-        <p class="text-xl text-gray-600 mt-4 max-w-3xl mx-auto">Digital Marketing Specialist với nền tảng SEO toàn diện và kinh nghiệm tối ưu quảng cáo, tập trung vào tăng trưởng bền vững cho doanh nghiệp.</p>
-        <div class="mt-8 flex justify-center space-x-4">
-          <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors">Liên hệ với tôi</a>
-          <!-- THAY THẾ LINK CV CỦA BẠN VÀO ĐÂY -->
-          <a href="#" class="bg-gray-200 text-gray-800 px-8 py-3 rounded-md font-semibold text-lg hover:bg-gray-300 transition-colors">Tải CV</a>
-        </div>
-      </div>
+    <section class="hero">
+      <h1>Chào bạn, tôi là <span class="fullname">Dắt Sa Liêm</span></h1>
+      <h2>Digital Marketing Specialist</h2>
+      <p>Chuyên nền tảng SEO toàn diện & kinh nghiệm tối ưu quảng cáo, tập trung tăng trưởng bền vững cho doanh nghiệp.</p>
+      <a href="/about/about.html" class="btn-main">Xem hồ sơ</a>
+      <a href="mailto:liemsa110@gmail.com" class="btn-outline">Liên hệ Email</a>
     </section>
-
-    <!-- === ABOUT SECTION === -->
-    <section id="about" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Giới thiệu &amp; Mục tiêu sự nghiệp</h2>
-        <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Tóm tắt về định hướng và mong muốn phát triển trong ngành Digital Marketing.</p>
-        <div class="grid md:grid-cols-2 gap-12 items-start">
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Về bản thân</h3>
-            <p class="mb-4">Với nền tảng Digital Marketing từ FPT Polytechnic và kinh nghiệm thực chiến tại OneAds, tôi mong muốn vận dụng kỹ năng SEO toàn diện và quản lý Google Ads để giúp công ty tăng trưởng organic traffic và tối ưu hiệu quả quảng cáo.</p>
-            Kinh nghiệm với Lark Suite, xây dựng quy trình và báo cáo cũng sẽ hỗ trợ tốt cho công việc. Tôi luôn sẵn sàng học hỏi và có trách nhiệm cao.
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Mục tiêu</h3>
-            <div class="space-y-4">
-              <div>
-                <h4 class="font-semibold text-lg text-gray-700">Ngắn hạn</h4>
-                Nhanh chóng mang lại cải thiện cụ thể cho các chỉ số (traffic, thứ hạng), tích cực nắm bắt quy trình và phối hợp tốt với đội ngũ.
-              </div>
-              <div>
-                <h4 class="font-semibold text-lg text-gray-700">Dài hạn</h4>
-                Trở thành chuyên viên vững vàng, có thể chủ động đề xuất giải pháp tối ưu, đồng hành và góp phần vào sự phát triển bền vững của công ty.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="intro-goals">
+      <h3>Giới thiệu & Mục tiêu sự nghiệp</h3>
+      <p>Với nền tảng Digital Marketing từ FPT Polytechnic & kinh nghiệm thực chiến tại OneAds, tôi mong muốn vận dụng kỹ năng SEO toàn diện, quản lý Google Ads để giúp công ty tăng trưởng organic traffic và tối ưu hiệu quả quảng cáo. Kinh nghiệm với Lark Suite, xây dựng quy trình & báo cáo cũng sẽ hỗ trợ tốt cho công việc. Tôi luôn sẵn sàng học hỏi và có trách nhiệm cao.</p>
+      <ul>
+        <li><strong>Ngắn hạn:</strong> Nhanh chóng cải thiện các chỉ số traffic, thứ hạng; nắm bắt quy trình, phối hợp hiệu quả với đội ngũ.</li>
+        <li><strong>Dài hạn:</strong> Trở thành chuyên viên vững vàng, chủ động tối ưu & đồng hành phát triển bền vững cùng doanh nghiệp.</li>
+      </ul>
     </section>
-
-    <!-- === SKILLS SECTION === -->
-    <section id="skills" class="py-20 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Chuyên môn &amp; Kỹ năng</h2>
-        <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Các công cụ và kỹ năng cốt lõi tôi sử dụng để tạo ra kết quả.</p>
-        <div class="bg-white p-8 rounded-lg shadow-lg">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Tối ưu SEO</h3>
-              <ul class="list-disc list-inside space-y-2">
-                <li>Thiết kế &amp; Tối ưu Wordpress, Haravan</li>
-                <li>Nghiên cứu từ khóa chuyên sâu</li>
-                <li>Triển khai Content theo Google Guideline</li>
-                <li>Tối ưu On-Page &amp; Technical SEO</li>
-                <li>Xây dựng &amp; Chăm sóc Social Entity (Make.com)</li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Quảng cáo Google</h3>
-              <ul class="list-disc list-inside space-y-2">
-                <li>Lập kế hoạch &amp; Phân bổ ngân sách</li>
-                <li>Thiết lập Conversion Tracking (GA4)</li>
-                <li>Xây dựng nội dung quảng cáo hiệu quả</li>
-                <li>Theo dõi, phân tích &amp; tối ưu hiệu suất</li>
-                <li>Tối ưu trang đích (Quality Score, CRO)</li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2">Công cụ &amp; Kỹ năng khác</h3>
-              <ul class="list-disc list-inside space-y-2">
-                <li>Thành thạo Lark Suite, Google Workspace</li>
-                <li>Xây dựng &amp; Tối ưu quy trình làm việc</li>
-                <li>Phân tích &amp; Giải quyết vấn đề</li>
-                <li>Quản lý dự án &amp; Làm việc nhóm</li>
-                <li>Tư duy logic &amp; Sáng tạo</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="cta-projects">
+      <h3>Khám phá các dự án nổi bật</h3>
+      <a href="/projects/projects.html" class="btn-main">Dự án tiêu biểu</a>
     </section>
-
-    <!-- === EXPERIENCE SECTION === -->
-    <section id="experience" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Hành trình sự nghiệp</h2>
-        <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Quá trình tích lũy kinh nghiệm và tạo ra những thành tựu thực tế tại OneAds Digital.</p>
-        <div class="border-l-2 border-blue-500 ml-4 md:ml-0 pl-8 relative">
-          <!-- Experience 1 -->
-          <div class="mb-12 relative">
-            <div class="absolute -left-[50px] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
-            <p class="text-sm text-gray-500">06/2025 - Hiện tại</p>
-            <h3 class="text-xl font-bold text-gray-800">Chuyên viên Digital</h3>
-            <p class="mt-2">Quản lý toàn diện các chiến dịch Google Ads (~400tr/tháng), A/B testing, xây dựng dashboard báo cáo và tối ưu chuyển đổi cho khách hàng TMĐT.</p>
-            <p class="mt-2 font-semibold text-green-600">Thành tựu: Đạt ROAS 6.59, CTR 17.76% cho dự án TMĐT. Giảm 75% chi phí/tin nhắn cho chiến dịch Facebook Ads.</p>
-          </div>
-          <!-- Experience 2 -->
-          <div class="mb-12 relative">
-            <div class="absolute -left-[50px] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
-            <p class="text-sm text-gray-500">08/2024 - 05/2025</p>
-            <h3 class="text-xl font-bold text-gray-800">Quản lý dự án SEO</h3>
-            <p class="mt-2">Xây dựng quy trình SEO, quản lý chất lượng content, lập kế hoạch, báo cáo hiệu suất và tự động hóa tác vụ social bằng Make.com.</p>
-            <p class="mt-2 font-semibold text-green-600">Thành tựu: 95% trong 11 dự án đạt &amp; vượt KPI. Góp phần tăng trưởng traffic website OneAds đạt 17.400 clicks/tháng.</p>
-          </div>
-          <!-- Experience 3 -->
-          <div class="relative">
-            <div class="absolute -left-[50px] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
-            <p class="text-sm text-gray-500">02/2024 - 08/2024</p>
-            <h3 class="text-xl font-bold text-gray-800">Thực tập sinh SEO</h3>
-            <p class="mt-2">Nghiên cứu từ khóa, tối ưu on-page, kiểm tra lỗi technical, triển khai hệ thống social entity và phối hợp xây dựng Schema.</p>
-            <p class="mt-2 font-semibold text-green-600">Thành tựu: Đạt giải "Intern Xuất Sắc" (1/7 intern team SEO) và được giữ lại làm nhân viên chính thức.</p>
-          </div>
-        </div>
-      </div>
+    <section class="contact-cta">
+      <h3>Kết nối với tôi</h3>
+      <a href="mailto:liemsa110@gmail.com" class="btn-outline">liemsa110@gmail.com</a> | 
+      <a href="https://www.facebook.com/datsaliem" target="_blank" rel="noopener">Facebook</a> | 
+      <a href="https://www.linkedin.com/in/saliem" target="_blank" rel="noopener">LinkedIn</a>
     </section>
-
-    <!-- === PROJECTS SECTION (Slider) === -->
-    <section id="projects" class="py-20 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Dự án &amp; Giải thưởng</h2>
-        <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Các dự án và thành tích nổi bật trong quá trình học tập và thi đấu.</p>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper pb-12">
-            <!-- Slide 1: Baboitoys -->
-            <div class="swiper-slide bg-white rounded-lg shadow-lg p-8 flex flex-col">
-              <h3 class="text-xl font-bold text-blue-600">Dự án: Baboitoys</h3>
-              <p class="text-sm text-gray-500 mb-4">05/2024 - 05/2025</p>
-              <p class="flex-grow">Lập kế hoạch và triển khai marketing tổng thể cho dự án. Xây dựng nội dung đa kênh (Content SEO, Video ngắn).</p>
-              <ul class="mt-4 list-disc list-inside space-y-1 text-green-600 font-semibold">
-                <li>2.1k clicks &amp; 81k impressions từ SEO</li>
-                <li>31.5k lượt xem trên TikTok</li>
-                <li>254 lượt theo dõi trên Facebook</li>
-              </ul>
-            </div>
-            <!-- Slide 2: Tranh Năng Lượng Tâm An -->
-            <div class="swiper-slide bg-white rounded-lg shadow-lg p-8 flex flex-col">
-              <h3 class="text-xl font-bold text-blue-600">Dự án: Tranh Năng Lượng Tâm An</h3>
-              <p class="text-sm text-gray-500 mb-4">10/2023 - 12/2023</p>
-              <p class="flex-grow">Tối ưu giao diện, nghiên cứu từ khóa và triển khai hoạt động SEO trong và ngoài trang web.</p>
-              <ul class="mt-4 list-disc list-inside space-y-1 text-green-600 font-semibold">
-                <li>Đưa từ khóa "Tranh năng lượng" lên Top 1 Google</li>
-                <li>30.2k lượt xem trên TikTok</li>
-                <li>124 followers trên TikTok</li>
-              </ul>
-            </div>
-            <!-- Slide 3: Giải Nhì Bee Nông Sản -->
-            <div class="swiper-slide bg-white rounded-lg shadow-lg p-8 flex flex-col">
-              <h3 class="text-xl font-bold text-amber-600">Giải Nhì: Bee Nông Sản</h3>
-              <p class="text-sm text-gray-500 mb-4">Thương hiệu Phước Long Trà | 03/2024 - 04/2024</p>
-              <p class="flex-grow">Nghiên cứu chân dung khách hàng và hoạch định chiến lược Marketing số cho thương hiệu.</p>
-            </div>
-            <!-- Slide 4: Quán Quân Khởi sự Doanh nghiệp -->
-            <div class="swiper-slide bg-white rounded-lg shadow-lg p-8 flex flex-col">
-              <h3 class="text-xl font-bold text
+  </main>
+  <footer>
+    <p>&copy; 2025 Dắt Sa Liêm. Powered by GitHub Pages.</p>
+  </footer>
+</body>
+</html>
