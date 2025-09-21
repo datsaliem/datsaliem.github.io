@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Dự án tiêu biểu | Dắt Sa Liêm</title>
+  <meta name="description" content="Danh sách dự án tiêu biểu, thành tựu, giải thưởng Digital Marketing của Dắt Sa Liêm.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Trang chủ</a></li>
+        <li><a href="/about/about.html">Về tôi</a></li>
+        <li><a href="/skills/skills.html">Kỹ năng</a></li>
+        <li><a href="/projects/projects.html" class="active">Dự án</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/contact/contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="projects">
+      <h1>Dự án & Giải thưởng tiêu biểu</h1>
+
+      <article>
+        <h2>Baboitoys (05/2024 - 05/2025)</h2>
+        <ul>
+          <li>Lập kế hoạch và triển khai marketing tổng thể cho dự án.</li>
+          <li>Xây dựng nội dung đa kênh (Content SEO, Video ngắn).</li>
+          <li>2.1k clicks & 81k impressions từ SEO.</li>
+          <li>31.5k lượt xem trên TikTok, 254 followers trên Facebook.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Tranh Năng Lượng Tâm An (10/2023 - 12/2023)</h2>
+        <ul>
+          <li>Tối ưu giao diện, nghiên cứu từ khóa và triển khai hoạt động SEO trong/ngoài website.</li>
+          <li>Đưa từ khóa "Tranh năng lượng" lên Top 1 Google.</li>
+          <li>30.2k lượt xem trên TikTok, 124 followers trên TikTok.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Giải Nhì Bee Nông Sản (03/2024 - 04/2024)</h2>
+        <ul>
+          <li>Nghiên cứu chân dung khách hàng, hoạch định chiến lược marketing số cho thương hiệu Phước Long Trà.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h2>Quản lý dự án SEO tại OneAds (08/2024 - 05/2025)</h2>
+        <ul>
+          <li>Xây dựng quy trình SEO, quản lý chất lượng content, lập kế hoạch, báo cáo hiệu suất và tự động hóa tác vụ bằng Make.com.</li>
+          <li>Thành tựu: 95% trong 11 dự án đạt & vượt KPI, góp phần tăng traffic OneAds lên 17.400 clicks/tháng.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Dắt Sa Liêm. Powered by GitHub Pages.</p>
+  </footer>
+</body>
+</html>
