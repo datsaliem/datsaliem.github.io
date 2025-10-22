@@ -23,4 +23,5 @@ export interface Project {
   achievements: string[];
   challenges: string[];
   strategies: string[];
+  clientLogo: string;
 }

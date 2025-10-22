@@ -1,4 +1,5 @@
 
+
 import type { ExperienceItem, Project } from './types';
 
 export const PERSONAL_INFO = {
@@ -11,6 +12,16 @@ export const PERSONAL_INFO = {
   shortTermGoal: "Em đặt mục tiêu vận dụng hiệu quả kiến thức SEO & Google Ads sẵn có để nhanh chóng mang lại những cải thiện cụ thể cho các chỉ số (như traffic, thứ hạng) trong các dự án của công ty. Song song đó, em sẽ tích cực nắm bắt quy trình và phối hợp tốt với đội ngũ để công việc chung hiệu quả hơn.",
   longTermGoal: "Em mong muốn trở thành một chuyên viên Digital Marketing vững vàng, không chỉ làm tốt mà còn có thể chủ động đề xuất các giải pháp tối ưu cho chiến dịch, đồng hành và góp phần vào sự phát triển bền vững của công ty."
 };
+
+export const NAV_LINKS = [
+  { name: 'Giới Thiệu', href: '#about' },
+  { name: 'Kinh Nghiệm', href: '#experience' },
+  { name: 'Kỹ Năng', href: '#skills' },
+  { name: 'Dự Án', href: '#portfolio' },
+  { name: 'Học Vấn', href: '#education' },
+  { name: 'AI Advisor', href: '#ai-advisor' },
+];
+
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
@@ -75,7 +86,8 @@ export const PROJECTS_DATA: Project[] = [
             "Sử dụng mô hình STP (Segmentation, Targeting, Positioning) để xác định thị trường.",
             "Áp dụng ma trận SWOT để phân tích điểm mạnh, yếu, cơ hội, thách thức.",
             "Xây dựng chiến lược content marketing tập trung vào giá trị độc đáo của sản phẩm."
-        ]
+        ],
+        clientLogo: "https://i.imgur.com/zJd2L2cs.png"
     },
     {
         title: "Top 10 FPT Edu Biz Talent",
@@ -96,7 +108,8 @@ export const PROJECTS_DATA: Project[] = [
             "Sử dụng mô hình PESTEL để phân tích môi trường vĩ mô.",
             "Đề xuất các chiến lược đa dạng hóa sản phẩm và mở rộng thị trường.",
             "Tập trung vào chuyển đổi số và tối ưu hóa trải nghiệm khách hàng."
-        ]
+        ],
+        clientLogo: "https://i.imgur.com/gO23VpTs.png"
     },
     {
         title: "Giải Nhì Bee Nông Sản",
@@ -116,7 +129,8 @@ export const PROJECTS_DATA: Project[] = [
             "Thực hiện khảo sát và phỏng vấn sâu để xây dựng chân dung khách hàng.",
             "Sử dụng chiến lược marketing đa kênh (omnichannel) để tiếp cận khách hàng.",
             "Tập trung vào storytelling và xây dựng cộng đồng thương hiệu."
-        ]
+        ],
+        clientLogo: "https://i.imgur.com/Y42bXj8s.png"
     },
     {
         title: "Thành Viên Triển Khai",
@@ -137,6 +151,7 @@ export const PROJECTS_DATA: Project[] = [
             "Tập trung vào SEO on-page và technical để xây dựng nền tảng website vững chắc.",
             "Sản xuất video ngắn theo trend để tăng tương tác trên Facebook.",
             "Chạy các chiến dịch quảng cáo nhỏ để thu hút lượng theo dõi ban đầu."
-        ]
+        ],
+        clientLogo: "https://i.imgur.com/9m2b474s.png"
     }
 ];

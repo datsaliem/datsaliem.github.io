@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PERSONAL_INFO } from '../constants';
 
@@ -6,12 +5,12 @@ const Hero: React.FC = () => {
   const { name, title, email, linkedin } = PERSONAL_INFO;
 
   return (
-    <section id="hero" className="flex flex-col md:flex-row items-center justify-between py-20 md:py-32">
+    <section id="hero" className="lg:hidden flex flex-col md:flex-row items-center justify-between py-16 md:py-28">
       <div className="md:w-2/3 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
           {name}
         </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold gradient-text mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent mb-6">
           {title}
         </h2>
         <p className="max-w-xl text-lg text-slate-400 mb-8 mx-auto md:mx-0">
@@ -34,11 +33,11 @@ const Hero: React.FC = () => {
           </a>
         </div>
       </div>
-      <div className="mt-12 md:mt-0 md:w-1/3 flex justify-center">
-        <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-500 shadow-2xl">
+      <div className="mt-16 md:mt-0 md:w-1/3 flex justify-center">
+        <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-500 shadow-2xl">
           <img
-            src="https://i.imgur.com/eB95n4h.png"
-            alt={name}
+            src="https://i.imgur.com/eB95n4hm.png"
+            alt={`Headshot of ${name}`}
             className="w-full h-full object-cover"
           />
         </div>

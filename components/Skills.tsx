@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect, useRef } from 'react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 
-const SkillCard: React.FC<{ title: string; skills: string[]; index: number }> = ({ title, skills, index }) => {
+const SkillCard: React.FC<{ title: string; skills: { name: string; tooltip: string }[]; index: number }> = ({ title, skills, index }) => {
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -39,9 +39,15 @@ const SkillCard: React.FC<{ title: string; skills: string[]; index: number }> = 
       <h3 className="text-xl font-bold text-teal-400 mb-4">{title}</h3>
       <ul className="space-y-2">
         {skills.map((skill, skillIndex) => (
-          <li key={skillIndex} className="flex items-center group">
+          <li key={skillIndex} className="relative flex items-center group">
             <svg className="w-4 h-4 mr-2 text-teal-500 transition-transform duration-300 ease-in-out group-hover:scale-125 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span className="text-slate-300 group-hover:text-white transition-colors duration-300">{skill}</span>
+            <span className="text-slate-300 group-hover:text-white transition-colors duration-300">{skill.name}</span>
+            <span
+              role="tooltip"
+              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap px-3 py-1.5 bg-slate-700 text-white text-xs font-medium rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10"
+            >
+              {skill.tooltip}
+            </span>
           </li>
         ))}
       </ul>
@@ -50,28 +56,58 @@ const SkillCard: React.FC<{ title: string; skills: string[]; index: number }> = 
 };
 
 const Skills: React.FC = () => {
+  const [ref, isVisible] = useAnimateOnScroll();
   const skillCategories = [
     {
       title: "Tối ưu Website (SEO)",
-      skills: ["Wordpress & Haravan", "Keyword Research", "On-Page & Technical SEO", "Content SEO Guideline", "Schema Markup"]
+      skills: [
+        { name: "Wordpress & Haravan", tooltip: "Nền tảng CMS & E-commerce phổ biến" },
+        { name: "Keyword Research", tooltip: "Sử dụng Ahrefs, SEMrush, Keyword Planner" },
+        { name: "On-Page & Technical SEO", tooltip: "Tối ưu nội dung, meta tags, tốc độ, schema" },
+        { name: "Content SEO Guideline", tooltip: "Xây dựng nội dung theo Google Helpful Content" },
+        { name: "Schema Markup", tooltip: "Triển khai dữ liệu có cấu trúc để tăng CTR" }
+      ]
     },
     {
       title: "Quảng Cáo Google",
-      skills: ["Budget Planning", "Conversion Tracking", "Ad Content Creation", "A/B Testing", "Performance Monitoring"]
+      skills: [
+        { name: "Budget Planning", tooltip: "Lập kế hoạch và phân bổ ngân sách hiệu quả" },
+        { name: "Conversion Tracking", tooltip: "Thiết lập theo dõi chuyển đổi qua GTM & GA4" },
+        { name: "Ad Content Creation", tooltip: "Viết nội dung quảng cáo hấp dẫn, CTR cao" },
+        { name: "A/B Testing", tooltip: "Thử nghiệm các biến thể để tối ưu hiệu suất" },
+        { name: "Performance Monitoring", tooltip: "Theo dõi và báo cáo hiệu suất chiến dịch" }
+      ]
     },
     {
       title: "Công Cụ & Nền Tảng",
-      skills: ["Google Analytics (GA4)", "Google Data Studio", "Lark Suite (Docs, Base)", "Make.com Automation", "Canva"]
+      skills: [
+        { name: "Google Analytics (GA4)", tooltip: "Phân tích traffic và hành vi người dùng" },
+        { name: "Google Data Studio", tooltip: "Xây dựng dashboard báo cáo tự động" },
+        { name: "Lark Suite (Docs, Base)", tooltip: "Quản lý công việc và quy trình đội nhóm" },
+        { name: "Make.com Automation", tooltip: "Tự động hóa các quy trình marketing" },
+        { name: "Canva", tooltip: "Thiết kế hình ảnh cơ bản cho social, ads" }
+      ]
     },
     {
       title: "Kỹ Năng Mềm & Khác",
-      skills: ["Process Optimization", "Problem Solving", "Teamwork & Collaboration", "Project Management", "Logical & Creative Thinking"]
+      skills: [
+        { name: "Process Optimization", tooltip: "Cải tiến quy trình làm việc để tăng hiệu quả" },
+        { name: "Problem Solving", tooltip: "Phân tích và giải quyết vấn đề logic" },
+        { name: "Teamwork & Collaboration", tooltip: "Phối hợp hiệu quả với các thành viên" },
+        { name: "Project Management", tooltip: "Quản lý và triển khai dự án đúng tiến độ" },
+        { name: "Logical & Creative Thinking", tooltip: "Tư duy logic kết hợp sáng tạo trong marketing" }
+      ]
     }
   ];
 
   return (
-    <section id="skills" className="py-20">
-      <h2 className="text-3xl font-bold text-center text-white mb-4">
+    <section 
+      ref={ref} 
+      id="skills" 
+      aria-labelledby="skills-heading" 
+      className={`py-20 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+    >
+      <h2 id="skills-heading" className="text-3xl font-bold text-center text-white mb-4">
         Chuyên Môn & Kỹ Năng
       </h2>
       <div className="w-20 h-1 bg-teal-500 mx-auto mb-12"></div>

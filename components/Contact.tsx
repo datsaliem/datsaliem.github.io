@@ -1,12 +1,18 @@
-
 import React from 'react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
   const { email, linkedin, location } = PERSONAL_INFO;
+  const [ref, isVisible] = useAnimateOnScroll();
   return (
-    <section id="contact" className="py-20 text-center">
-       <h2 className="text-3xl font-bold text-center text-white mb-4">
+    <section 
+      ref={ref} 
+      id="contact" 
+      aria-labelledby="contact-heading" 
+      className={`lg:hidden py-20 text-center ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+    >
+       <h2 id="contact-heading" className="text-3xl font-bold text-center text-white mb-4">
         Liên Hệ
       </h2>
       <div className="w-20 h-1 bg-teal-500 mx-auto mb-12"></div>
@@ -15,7 +21,7 @@ const Contact: React.FC = () => {
         Hãy kết nối với em!
       </p>
 
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-lg">
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8 text-lg">
         <div className="flex items-center">
             <svg className="w-6 h-6 mr-3 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
             <a href={`mailto:${email}`} className="text-slate-300 hover:text-teal-400 transition-colors duration-300">

@@ -1,13 +1,20 @@
-
 import React from 'react';
+import { useAnimateOnScroll } from '../hooks/useAnimateOnScroll';
 import { PERSONAL_INFO } from '../constants';
 
 const About: React.FC = () => {
   const { about, shortTermGoal, longTermGoal } = PERSONAL_INFO;
+  const [ref, isVisible] = useAnimateOnScroll();
 
   return (
-    <section id="about" className="py-20">
-      <h2 className="text-3xl font-bold text-center text-white mb-4">
+    <section 
+      ref={ref} 
+      id="about" 
+      aria-labelledby="about-heading" 
+      className={`py-20 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+      style={{ animationDelay: '100ms' }}
+    >
+      <h2 id="about-heading" className="text-3xl font-bold text-center text-white mb-4">
         Giới Thiệu
       </h2>
       <div className="w-20 h-1 bg-teal-500 mx-auto mb-12"></div>
